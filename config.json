@@ -1,0 +1,144 @@
+{
+    "Logging": {
+        "loggingLevel": 10,
+        "logsFolder": "./logs/",
+        "loggingDatetimeFormat": "%Y-%m-%d %I:%M:%S",
+        "loggingFormat": "[%(asctime)s]:%(levelname)s: %(message)s"
+    },
+    "Seeds": {
+        "ID": 1,
+        "Px_Init": 2,
+        "Px_Fill": 3,
+        "Volume_Init": 4,
+        "Volume_Fill": 5,
+        "Status": 6,
+        "Datetime": 7,
+        "Instrument": 8,
+        "Side": 9,
+        "Tags": 10,
+        "Notes": 11
+    },
+    "Data": {
+        "Instrument": [
+            "AUDCAD",
+            "USDCAD",
+            "USDJPY",
+            "AUDUSD",
+            "EURCHF",
+            "EURNOK",
+            "GBPNZD",
+            "GBPUSD",
+            "EURTRY",
+            "GBPAUD",
+            "NZDCAD"
+        ],
+        "Px_Init": [
+            0.98,
+            1.27,
+            103.6,
+            0.78,
+            1.08,
+            10.39,
+            1.9,
+            1.37,
+            8.94,
+            1.77,
+            0.92
+        ],
+        "Tags": [
+            "tag1",
+            "tag2",
+            "tag3",
+            "tag4",
+            "tag5",
+            "tag6",
+            "tag7",
+            "tag8",
+            "tag9",
+            "tag10",
+            "tag11"
+        ],
+        "Side": [
+            "Buy",
+            "Sell"
+        ],
+        "Notes": [
+            "Note1",
+            "Note2",
+            "Note3",
+            "Note4",
+            "Note5",
+            "Note6",
+            "Note7",
+            "Note8",
+            "Note9",
+            "Note10",
+            "Note11"
+        ],
+        "Status": [
+            [
+                "New"
+            ],
+            [
+                "InProcess"
+            ],
+            [
+                "Fill",
+                "PartialFill",
+                "Cancel"
+            ],
+            [
+                "Done"
+            ]
+        ]
+    },
+    "Parameters": {
+        "baseDatetime": "17.02.2021 15:35:15.673",
+        "baseDatetimeFormat": "%d.%m.%Y %H:%M:%S.%f",
+        "timeFrameMilliseconds" : 86400000,
+        "digitsInPrice": 6,
+        "maxVolume": 1000000,
+        "minVolume": 1000,
+        "variationUnits": 100,
+        "tableName" : "orders_history",
+        "databaseName" : "orders"
+    },
+    "OrdersParameters": {
+        "total": 2000,
+        "orders": [
+            {
+                "count": 600,
+                "Statuses": [
+                    1,
+                    2,
+                    3
+                ]
+            },
+            {
+                "count": 1200,
+                "Statuses": [
+                    0,
+                    1,
+                    2,
+                    3
+                ]
+            },
+            {
+                "count": 200,
+                "Statuses": [
+                    0,
+                    1,
+                    2
+                ]
+            }
+        ]
+    },
+    "DependentParameters" : {
+        "New" : 0,
+        "InProcess" : 0,
+        "Fill" : 1,
+        "PartialFill" : 2,
+        "Cancel" : 0,
+        "Done" : 3
+    }
+}

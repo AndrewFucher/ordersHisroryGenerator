@@ -1,0 +1,149 @@
+[2021-02-18 02:34:16.000]:INFO: Starting generate data
+[2021-02-18 02:34:16.000]:INFO: Generated ID
+[2021-02-18 02:34:16.000]:INFO: Generated side
+[2021-02-18 02:34:16.000]:INFO: Generated instrument
+[2021-02-18 02:34:16.000]:INFO: Generated px_Init
+[2021-02-18 02:34:16.000]:INFO: Generated px_Fill
+[2021-02-18 02:34:16.000]:INFO: Generated volume_Init
+[2021-02-18 02:34:16.000]:INFO: Generated volume_Fill
+[2021-02-18 02:34:16.000]:INFO: Generated notes
+[2021-02-18 02:34:16.000]:INFO: Finished generating data. Starting formatting data
+[2021-02-18 02:34:16.000]:INFO: Finished formatting data
+[2021-02-18 02:34:16.000]:INFO: Starting composing data in insert
+[2021-02-18 02:34:16.000]:INFO: Finished composing data
+[2021-02-18 02:34:16.000]:INFO: Starting writing records to file
+[2021-02-18 02:34:16.000]:ERROR: [Errno 2] No such file or directory: './dumps/dump.txt'
+[2021-02-18 02:34:16.000]:INFO: Finished writing records to file
+[2021-02-18 02:34:23.000]:INFO: Starting generate data
+[2021-02-18 02:34:23.000]:INFO: Generated ID
+[2021-02-18 02:34:23.000]:INFO: Generated side
+[2021-02-18 02:34:23.000]:INFO: Generated instrument
+[2021-02-18 02:34:23.000]:INFO: Generated px_Init
+[2021-02-18 02:34:23.000]:INFO: Generated px_Fill
+[2021-02-18 02:34:23.000]:INFO: Generated volume_Init
+[2021-02-18 02:34:23.000]:INFO: Generated volume_Fill
+[2021-02-18 02:34:23.000]:INFO: Generated notes
+[2021-02-18 02:34:23.000]:INFO: Finished generating data. Starting formatting data
+[2021-02-18 02:34:23.000]:INFO: Finished formatting data
+[2021-02-18 02:34:23.000]:INFO: Starting composing data in insert
+[2021-02-18 02:34:23.000]:INFO: Finished composing data
+[2021-02-18 02:34:23.000]:INFO: Starting writing records to file
+[2021-02-18 02:34:23.000]:ERROR: [Errno 2] No such file or directory: './dumps/dump.txt'
+[2021-02-18 02:34:23.000]:INFO: Finished writing records to file
+[2021-02-18 02:35:16.000]:INFO: Starting generate data
+[2021-02-18 02:35:16.000]:INFO: Generated ID
+[2021-02-18 02:35:16.000]:INFO: Generated side
+[2021-02-18 02:35:16.000]:INFO: Generated instrument
+[2021-02-18 02:35:16.000]:INFO: Generated px_Init
+[2021-02-18 02:35:16.000]:INFO: Generated px_Fill
+[2021-02-18 02:35:16.000]:INFO: Generated volume_Init
+[2021-02-18 02:35:16.000]:INFO: Generated volume_Fill
+[2021-02-18 02:35:16.000]:INFO: Generated notes
+[2021-02-18 02:35:16.000]:INFO: Finished generating data. Starting formatting data
+[2021-02-18 02:35:16.000]:INFO: Finished formatting data
+[2021-02-18 02:35:16.000]:INFO: Starting composing data in insert
+[2021-02-18 02:35:16.000]:INFO: Finished composing data
+[2021-02-18 02:35:16.000]:INFO: Starting writing records to file
+[2021-02-18 02:35:16.000]:INFO: Finished writing records to file
+[2021-02-18 02:36:53]:INFO: Starting generate data
+[2021-02-18 02:36:53]:INFO: Generated ID
+[2021-02-18 02:36:53]:INFO: Generated side
+[2021-02-18 02:36:53]:INFO: Generated instrument
+[2021-02-18 02:36:53]:INFO: Generated px_Init
+[2021-02-18 02:36:53]:INFO: Generated px_Fill
+[2021-02-18 02:36:53]:INFO: Generated volume_Init
+[2021-02-18 02:36:53]:INFO: Generated volume_Fill
+[2021-02-18 02:36:53]:INFO: Generated notes
+[2021-02-18 02:36:54]:INFO: Finished generating data. Starting formatting data
+[2021-02-18 02:36:54]:INFO: Finished formatting data
+[2021-02-18 02:36:54]:INFO: Starting composing data in insert
+[2021-02-18 02:36:54]:INFO: Finished composing data
+[2021-02-18 02:36:54]:INFO: Starting writing records to file
+[2021-02-18 02:36:54]:INFO: Finished writing records to file
+[2021-02-18 02:39:15]:INFO: Starting generate data
+[2021-02-18 02:39:15]:INFO: Generated ID
+[2021-02-18 02:39:15]:INFO: Generated side
+[2021-02-18 02:39:15]:INFO: Generated instrument
+[2021-02-18 02:39:15]:INFO: Generated px_Init
+[2021-02-18 02:39:15]:INFO: Generated px_Fill
+[2021-02-18 02:39:15]:INFO: Generated volume_Init
+[2021-02-18 02:39:15]:INFO: Generated volume_Fill
+[2021-02-18 02:39:15]:INFO: Generated notes
+[2021-02-18 02:39:15]:INFO: Finished generating data. Starting formatting data
+[2021-02-18 02:39:15]:INFO: Finished formatting data
+[2021-02-18 02:39:25]:INFO: Starting generate data
+[2021-02-18 02:39:25]:INFO: Generated ID
+[2021-02-18 02:39:25]:INFO: Generated side
+[2021-02-18 02:39:25]:INFO: Generated instrument
+[2021-02-18 02:39:25]:INFO: Generated px_Init
+[2021-02-18 02:39:25]:INFO: Generated px_Fill
+[2021-02-18 02:39:25]:INFO: Generated volume_Init
+[2021-02-18 02:39:25]:INFO: Generated volume_Fill
+[2021-02-18 02:39:25]:INFO: Generated notes
+[2021-02-18 02:39:25]:INFO: Finished generating data. Starting formatting data
+[2021-02-18 02:39:25]:INFO: Finished formatting data
+[2021-02-18 02:39:25]:INFO: Starting composing data in insert
+[2021-02-18 02:39:25]:INFO: Finished composing data
+[2021-02-18 02:39:25]:INFO: Starting writing records to file
+[2021-02-18 02:39:25]:INFO: Finished writing records to file
+[2021-02-18 02:44:58]:INFO: Starting generate data
+[2021-02-18 02:44:58]:INFO: Generated ID
+[2021-02-18 02:44:58]:INFO: Generated side
+[2021-02-18 02:44:58]:INFO: Generated instrument
+[2021-02-18 02:44:58]:INFO: Generated px_Init
+[2021-02-18 02:44:58]:INFO: Generated px_Fill
+[2021-02-18 02:44:58]:INFO: Generated volume_Init
+[2021-02-18 02:44:58]:INFO: Generated volume_Fill
+[2021-02-18 02:44:58]:INFO: Generated notes
+[2021-02-18 02:44:58]:INFO: Finished generating data. Starting formatting data
+[2021-02-18 02:44:58]:INFO: Finished formatting data
+[2021-02-18 02:44:58]:INFO: Starting composing data in insert
+[2021-02-18 02:44:58]:INFO: Finished composing data
+[2021-02-18 02:44:58]:INFO: Starting writing records to file
+[2021-02-18 02:44:58]:INFO: Finished writing records to file
+[2021-02-18 02:47:08]:INFO: Starting generate data
+[2021-02-18 02:47:08]:INFO: Generated ID
+[2021-02-18 02:47:08]:INFO: Generated side
+[2021-02-18 02:47:08]:INFO: Generated instrument
+[2021-02-18 02:47:08]:INFO: Generated px_Init
+[2021-02-18 02:47:08]:INFO: Generated px_Fill
+[2021-02-18 02:47:08]:INFO: Generated volume_Init
+[2021-02-18 02:47:08]:INFO: Generated volume_Fill
+[2021-02-18 02:47:08]:INFO: Generated notes
+[2021-02-18 02:47:08]:INFO: Finished generating data. Starting formatting data
+[2021-02-18 02:47:08]:INFO: Finished formatting data
+[2021-02-18 02:47:08]:INFO: Starting composing data in insert
+[2021-02-18 02:47:08]:INFO: Finished composing data
+[2021-02-18 02:47:08]:INFO: Starting writing records to file
+[2021-02-18 02:47:08]:INFO: Finished writing records to file
+[2021-02-18 02:48:20]:INFO: Starting generate data
+[2021-02-18 02:48:20]:INFO: Generated ID
+[2021-02-18 02:48:20]:INFO: Generated side
+[2021-02-18 02:48:20]:INFO: Generated instrument
+[2021-02-18 02:48:20]:INFO: Generated px_Init
+[2021-02-18 02:48:20]:INFO: Generated px_Fill
+[2021-02-18 02:48:20]:INFO: Generated volume_Init
+[2021-02-18 02:48:20]:INFO: Generated volume_Fill
+[2021-02-18 02:48:20]:INFO: Generated notes
+[2021-02-18 02:48:20]:INFO: Finished generating data. Starting formatting data
+[2021-02-18 02:48:20]:INFO: Finished formatting data
+[2021-02-18 02:48:20]:INFO: Starting composing data in insert
+[2021-02-18 02:48:20]:INFO: Finished composing data
+[2021-02-18 02:48:20]:INFO: Starting writing records to file
+[2021-02-18 02:48:20]:INFO: Finished writing records to file
+[2021-02-18 02:51:09]:INFO: Finished setting up config
+[2021-02-18 02:51:09]:INFO: Starting generate data
+[2021-02-18 02:51:09]:INFO: Generated ID
+[2021-02-18 02:51:09]:INFO: Generated side
+[2021-02-18 02:51:09]:INFO: Generated instrument
+[2021-02-18 02:51:09]:INFO: Generated px_Init
+[2021-02-18 02:51:09]:INFO: Generated px_Fill
+[2021-02-18 02:51:09]:INFO: Generated volume_Init
+[2021-02-18 02:51:09]:INFO: Generated volume_Fill
+[2021-02-18 02:51:09]:INFO: Generated notes
+[2021-02-18 02:51:09]:INFO: Finished generating data. Starting formatting data
+[2021-02-18 02:51:09]:INFO: Finished formatting data
+[2021-02-18 02:51:09]:INFO: Starting composing data in insert
+[2021-02-18 02:51:09]:INFO: Finished composing data
+[2021-02-18 02:51:09]:INFO: Starting writing records to file
+[2021-02-18 02:51:09]:INFO: Finished writing records to file

@@ -1,0 +1,15 @@
+DATETIME_FORMAT = "%d.%m.%Y %H:%M:%S.%f"
+MYSQL_DATETIME_FORMAT = "%d.%m.%Y %H:%i:%S.%f"
+LCG_A = 1664530
+LCG_M = 1099511627776
+LCG_C = 1013904223
+CONFIG_FILE_PATH = "./config.json"
+CONFIG_DEFAULT_FILE_PATH = "./configDefault.json"
+DUMP_FILE_PATH = "./dumps/dump.txt"
+LOGGER_NAME = "logger"
+FILL_WITH_ZERO = 0
+FILL_WITH_DEFAULT = 1
+FILL_WITH_CHANGED = 2
+FILL_FROM_LAST = 3
+# DATABASE_NAME = "`orders`"
+# TABLE_NAME = "`orders_history`"
