@@ -7,7 +7,6 @@ from repository import MySQLTXTRepository
 class OHRGenerator:
     def __init__(self, config: dict) -> None:
         self._config = config
-        self._mapper = OHRDomainModelToDTOMapper()
 
     def setOHRBuilder(self) -> None:
         self._builder: IOHRBuilder = OHRBuilder1(self._config)
@@ -29,6 +28,6 @@ class OHRGenerator:
         self._builder.buildDatetime()
     
     def saveData(self) -> None:
-        data = self._mapper.mapToDTO(self._builder.getResult())
+        data = OHRDomainModelToDTOMapper.mapToDTO(self._builder.getResult())
         self._repository.addRange(data)
         self._repository.saveTo(DUMP_FILE_PATH, "db", "tablename")
