@@ -14,7 +14,7 @@ class OHRGeneratorFactory:
         self._builder: IOHRBuilder = builder
 
     def generateData(self) -> OHRDomainModel:
-        self._logger.info("Builder type is {}".format(type(self._builder)))
+        self._logger.info("Builder used is of type {}".format(type(self._builder)))
         if isinstance(self._builder, OHRBuilder1):
             self._generateDataBuilder1()
         print(type(self._builder))
