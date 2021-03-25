@@ -22,4 +22,4 @@ FILL_WITH_CHANGED: int = 2
 FILL_FROM_LAST: int = 3
 
 # MySQL
-MYSQL_STRING_FORMAT = "INSERT INTO `{}` VALUES ('{}', '{}', '{}', '{}', '{}', '{}', '{}', '{}', '{}', '{}', '{}');\n"
+MYSQL_STRING_FORMAT = "INSERT INTO `{}`.`{}` VALUES ('{}', '{}', '{}', '{}', '{}', '{}', '{}', '{}', '{}', '{}', '{}');\n"

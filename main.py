@@ -1,8 +1,13 @@
+import logging
+from typing import List
 from logging import Logger
-from ohr_factory import OHRGenerator
 import os.path
 
-from constants import CONFIG_FILE_PATH
+from dataobjects import OHRDTO, OHRDomainModel, OHRDomainModelToDTOMapper
+from repository import MySQLTXTRepository
+from ohr_generator import OHRBuilder1
+from ohr_factory import OHRGeneratorFactory
+from constants import CONFIG_FILE_PATH, DUMP_FILE_PATH
 from jsonconfigparser import JSONConfigParser
 from mylogger import MyLogger
 
@@ -24,9 +29,11 @@ class Main:
         self._logger.info("Searching for config file")
         if os.path.isfile(CONFIG_FILE_PATH):
             self._logger.info("Config file was found. Retrieving configuration")
+            
             self._config = self._config_parser.loadFrom(CONFIG_FILE_PATH)
         else:
             self._logger.info("Config file was not found. Using default config")
+
             self._config = self._config_parser.getDefaultConfig()
         MyLogger.setLoggingConfig(
             logger_format=self._config["Logging"]["loggingFormat"],
@@ -35,16 +42,23 @@ class Main:
         )
         self._logger = MyLogger.getLogger(__name__)
 
-    def workflow(self):
-        self.generateOHR()
+    def workflow(self) -> None:
+        data: OHRDomainModel = self.generateOHR()
+        self._logger.info("Generated data (Domain Model)")
+        
+        converted_data: List[OHRDTO] = OHRDomainModelToDTOMapper.mapToDTO(data)
+        self._logger.info("Converted data to DTO")
 
-    def generateOHR(self):
-        generator: OHRGenerator = OHRGenerator(self._config)
-        generator.setOHRBuilder()
-        generator.setRepository()
-        generator.generateData()
-        generator.saveData()
-        self._logger.info("Saved data")
+        repository: MySQLTXTRepository = MySQLTXTRepository(self._config)
+        repository.addRange(converted_data)
+        repository.saveTo(DUMP_FILE_PATH)
+        self._logger.info("Saved data to {}".format(DUMP_FILE_PATH))
+        
+
+    def generateOHR(self) -> OHRDomainModel:
+        generator: OHRGeneratorFactory = OHRGeneratorFactory()
+        generator.setOHRBuilder(OHRBuilder1(self._config))
+        return generator.generateData()
 
 
 if __name__ == "__main__":

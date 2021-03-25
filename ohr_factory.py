@@ -1,20 +1,26 @@
+import logging
+from mylogger import MyLogger
 from constants import DUMP_FILE_PATH
-from dataobjects import OHRDomainModelToDTOMapper
+from dataobjects import OHRDomainModel, OHRDomainModelToDTOMapper
 from ohr_generator import IOHRBuilder, OHRBuilder1
 from repository import MySQLTXTRepository
 
 
-class OHRGenerator:
-    def __init__(self, config: dict) -> None:
-        self._config = config
+class OHRGeneratorFactory:
+    def __init__(self) -> None:
+        self._logger = MyLogger.getLogger(__name__)
 
-    def setOHRBuilder(self) -> None:
-        self._builder: IOHRBuilder = OHRBuilder1(self._config)
-    
-    def setRepository(self) -> None:
-        self._repository = MySQLTXTRepository()
+    def setOHRBuilder(self, builder: IOHRBuilder) -> None:
+        self._builder: IOHRBuilder = builder
 
-    def generateData(self) -> None:
+    def generateData(self) -> OHRDomainModel:
+        self._logger.info("Builder type is {}".format(type(self._builder)))
+        if isinstance(self._builder, OHRBuilder1):
+            self._generateDataBuilder1()
+        print(type(self._builder))
+        return self._builder.getResult()
+
+    def _generateDataBuilder1(self):
         self._builder.buildSeriesList()
         self._builder.buildStatus()
         self._builder.buildInstrument()
@@ -26,8 +32,3 @@ class OHRGenerator:
         self._builder.buildPrice()
         self._builder.buildVolume()
         self._builder.buildDatetime()
-    
-    def saveData(self) -> None:
-        data = OHRDomainModelToDTOMapper.mapToDTO(self._builder.getResult())
-        self._repository.addRange(data)
-        self._repository.saveTo(DUMP_FILE_PATH, "db", "tablename")
